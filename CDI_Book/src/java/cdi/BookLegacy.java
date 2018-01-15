@@ -9,7 +9,7 @@ import javax.inject.Inject;
 public class BookLegacy {
     
     @Inject @EightDigits
-    public NumberGeneretor numberGenerator;
+    private NumberGeneretor numberGenerator;
     
     public Book createLegacyBook(String title, float price, String description){
         Book bookleg = new Book(title, price, description);

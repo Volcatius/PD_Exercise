@@ -9,7 +9,7 @@ import javax.inject.Inject;
 public class BookService {
     
     @Inject @ThirteenDigits
-    public NumberGeneretor numberGeneretor;
+    private NumberGeneretor numberGeneretor;
 
     public Book createBook(String title, float prize, String description){
         Book book = new Book(title, prize, description);

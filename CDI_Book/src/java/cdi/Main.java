@@ -17,7 +17,7 @@ public class Main {
         
         Book book = bookService.createBook("Grinfie", 5.2F, "Gigi non fare il push");
         
-        System.out.println(book);
+        System.out.println(book.toString());
         
         weld.shutdown();
     }

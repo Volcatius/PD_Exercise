@@ -31,16 +31,12 @@ public class Book implements Serializable {
     @Size (min=10, max=2000)
     private String description;
 
-    public Book() {
-    }
-    
     public Book(String title, Float prize, String description) {
         this.title = title;
         this.prize = prize;
         this.description = description;
     }
-    
-    
+
     public String getTitle() {
         return title;
     }
@@ -93,10 +89,10 @@ public class Book implements Serializable {
         }
         return true;
     }
-    
+
     @Override
     public String toString() {
-        return "jpa_project.Book[ id=" + id + " ]";
+        return "Book{" + "id=" + id + ", title=" + title + ", prize=" + prize + ", description=" + description + '}';
     }
-    
+  
 }
